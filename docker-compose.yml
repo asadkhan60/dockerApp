@@ -27,6 +27,7 @@ services:
         php:
                 container_name: php
                 build: ./docker/php
+                working_dir: /var/www/app
                 volumes:
                         - .:/var/www/app
 
