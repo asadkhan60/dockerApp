@@ -9,6 +9,7 @@ services:
                         - php
                         - mysql
                 volumes:
+                        - ./docker/apache/httpd.conf:/usr/local/apache2/conf/httpd.conf
                         - .:/var/www/app
 
         mysql:
@@ -30,4 +31,3 @@ services:
                 working_dir: /var/www/app
                 volumes:
                         - .:/var/www/app
-
