@@ -1,10 +1,11 @@
 # dockerApp installation
 
+- Stop your mysql and apache services : sudo service mysql stop && sudo service apache2 stop
 - docker-compose build
 - docker-compose up -d
-- connect to your php container : docker-compose exec php bash
-- install project dependencies : composer install
-- go to localhost:8080
+- Connect to your php container : docker-compose exec php bash
+- Install project dependencies : composer install
+- Go to localhost:8080
 
 
 # Containers connections
